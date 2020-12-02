@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import VideoUploadForm from './components/VideoUploadForm/VideoUploadForm'
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
+      <VideoUploadForm />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
