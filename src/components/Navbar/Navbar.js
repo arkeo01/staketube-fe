@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Navbar = () => {
+const Navbar = ({ onRouteChange }) => {
   const classes = useStyles();
 
   return (
@@ -32,8 +32,8 @@ const Navbar = () => {
           <Typography align="left" variant="h6" className={classes.title}>
             Stake Tube
           </Typography>
-          <Button color="inherit">Videos</Button>
-          <Button color="inherit">Upload Video</Button>
+          <Button color="inherit" onClick={() => onRouteChange('videos')}>Videos</Button>
+          <Button color="inherit" onClick={() => onRouteChange('uploadVideo')}>Upload Video</Button>
         </Toolbar>
       </AppBar>
     </div>
