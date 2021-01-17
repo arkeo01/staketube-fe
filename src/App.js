@@ -3,8 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import VideoUploadForm from './components/VideoUploadForm/VideoUploadForm'
 import Videos from './components/Videos/Videos';
 import { Component } from 'react';
-import { render } from '@testing-library/react';
-import initiate, { intiate } from './js/utils';
+import initiate from './js/utils';
 
 class App extends Component{
   constructor(){
@@ -22,9 +21,10 @@ class App extends Component{
     }
   }
 
-  componentDidMount() {
-    initiate();
-  }
+  // Script initiation for metamask connection
+  // componentDidMount() {
+  //   initiate();
+  // }
 
   render() {
     return (
